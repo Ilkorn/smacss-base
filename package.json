@@ -1,7 +1,7 @@
 {
     "name": "baseSmacss",
     "version": "0.0.1",
-    "description": "Application description goes here",
+    "description": "Application base for e-commerce sites",
     "devDependencies": {
         "gulp": "~3.8.10",
         "gulp-if": "~1.2.5",

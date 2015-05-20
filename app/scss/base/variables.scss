@@ -2,8 +2,18 @@
 SMACSS: VARIABLES
 -------------------------------------------------*/
 /* Colors */
-$color-white: #fff;
-$color-black: #000;
+$color-base: #fff;
+$color-alternative: #aaa;
+$color-error: #aa1122;
+$color-error-success: #11dd55;
 
 /* Font */
 $font-OpenSans: 'Open Sans', 'Arial', sans-serif;
+
+
+/* Page size */
+$page-large: 1200px;
+$page-medium: 992px;
+$page-small: 768px;
+$page-extra-small: 480px;
+$page-max-width: $page-medium;

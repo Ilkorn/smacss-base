@@ -1,56 +1,45 @@
 /*-------------------------------------------------
 SMACSS: LAYOUT - COMMON
 -------------------------------------------------*/
-header,
-section,
-footer {
-  max-width: 800px;
-  margin: 50px auto;
+html,
+body,
+.l_page_wrapper {
+  height: 100%;
+}
+
+.l_page_wrapper {
+  display: table;
+  width: 100%;
+  max-width: $page-max-width;
+  min-width: 320px;
+
+  @include centred();
+
+  @media (max-width: $page-medium) {
+    max-width: 100%;
+  }
 }
 
 /*-------------------------------------------------
 SMACSS: LAYOUT - HEADER
 -------------------------------------------------*/
-header {
-    border-top: 2px solid #e85151;
-    padding: 10px;
-    color: #e85151;
+.l_header {
 
-    .title {
-      font-size: em(30); // em to px convertor
-    }
-
-    .caption {
-      padding-top: 10px;
-      font-size: 14px;
-    }
 }
 
 /*-------------------------------------------------
-SMACSS: LAYOUT - SECTION
+SMACSS: LAYOUT - CONTENT
 -------------------------------------------------*/
-section {
+.l_content {
+  display: table-row;
+  height: 100%;
   padding: 40px 20px;
-  color: #fff;
-  font-size: em(70);
-  font-weight: 300;
 }
 
 /*-------------------------------------------------
 SMACSS: LAYOUT - FOOTER
 -------------------------------------------------*/
-footer {
-  color: #5A5F62;
-  font-size: 11px;
+.l_footer {
   text-align: center;
-  padding: 10px;
   width: 100%;
-
-  a {
-    color: #5A5F62;
-
-    &:hover {
-      color: #ced9e0;
-    }
-  }
 }

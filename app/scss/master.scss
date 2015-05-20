@@ -17,13 +17,10 @@ Categorizing:
 MASTER: IMPORTING STYLESHEETS
 -------------------------------------------------*/
 
-@import "base/reset";
-@import "base/variables";
-@import "base/mixins";
-@import "base/base";
+@import "base/index";
 
-@import "layout/layout";
+@import "layout/index";
 
-@import "modules/module";
+@import "modules/index";
 
-@import "pages/page-landing";
+@import "pages/index";

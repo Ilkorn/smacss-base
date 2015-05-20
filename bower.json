@@ -2,13 +2,10 @@
   "name": "baseSmacss",
   "version": "0.0.1",
   "dependencies": {
-    
-    "jquery": "*"
+    "jquery": "*",
+    "compass-mixins": "~1.0.2",
+    "normalize.css": "~3.0.3"
   },
-  "devDependencies": {
-
-  },
-  "overrides": {
-
-  }
+  "devDependencies": {},
+  "overrides": {}
 }

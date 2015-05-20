@@ -1,6 +1,9 @@
 /*-------------------------------------------------
 SMACSS: BASE
 -------------------------------------------------*/
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 body {
     background: #22272a;
     color: #ced9e0;

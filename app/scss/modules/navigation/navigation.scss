@@ -1,0 +1,55 @@
+/*-------------------------------------------------
+SMACSS: MODULE - NAVIGATION
+-------------------------------------------------*/
+%navigation__item-base {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: -4px;
+
+  &.is-active {
+    background: rgba(#fff, .3);
+  }
+}
+
+.navigation {
+  display: block;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  @include clearfix();
+  
+  a {
+    color: $color-alternative;
+    text-decoration: none;
+    
+    &:visited {
+      color: $color-alternative;
+    }
+    
+    &:hover {
+      color: $color-alternative;
+    }
+  }
+
+  &__item {
+    @extend %navigation__item-base;
+
+    &--right {
+      float: right;
+      margin-right: 0px;
+      margin-left: -4px;
+    }
+  }
+
+  &__text{
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: $page-small) {
+  .navigation__item{
+    display: block;
+    float: none;
+  }
+}

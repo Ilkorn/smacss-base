@@ -1,0 +1,41 @@
+/*-------------------------------------------------
+SMACSS: MODULE - DROPDOWN
+-------------------------------------------------*/
+.dropdown {
+  display: block;
+  position: relative;
+
+  &--full-width {
+    position: static;
+  }
+
+  .dropdown__caption {
+    padding: 10px;
+
+    &:after {
+      content: "+";
+      padding-left: 1em;
+    }
+  }
+
+  .dropdown__content {
+    display: none;
+    width: 100%;
+    max-width: 200%;
+
+    position: absolute;
+    top: 3em;
+
+    background: #008000;
+
+
+  }
+
+  &.is-open {
+    background: rgba(#fff, .1);
+
+    .dropdown__caption + .dropdown__content {
+      display: block;
+    }
+  }
+}

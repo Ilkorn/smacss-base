@@ -6,13 +6,13 @@ SMACSS: BASE
 }
 body {
     background: #22272a;
-    color: #ced9e0;
+    color: $color-base;
     font-family: $font-OpenSans;
 }
 
 a {
-    color: #039;
+    color: $color-alternative;
 }
 a:hover {
-    color: #03C;
+    color: $color-alternative;
 }

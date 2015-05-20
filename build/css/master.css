@@ -382,14 +382,14 @@ SMACSS: BASE
 
 body {
   background: #22272a;
-  color: #ced9e0;
+  color: #fff;
   font-family: 'Open Sans', 'Arial', sans-serif; }
 
 a {
-  color: #039; }
+  color: #aaa; }
 
 a:hover {
-  color: #03C; }
+  color: #aaa; }
 
 /*-------------------------------------------------
 SMACSS: LAYOUT - COMMON
@@ -424,6 +424,74 @@ SMACSS: LAYOUT - FOOTER
 .l_footer {
   text-align: center;
   width: 100%; }
+
+/*-------------------------------------------------
+SMACSS: MODULES
+-------------------------------------------------*/
+/*-------------------------------------------------
+SMACSS: MODULE - NAVIGATION
+-------------------------------------------------*/
+.navigation__item {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: -4px; }
+  .is-active.navigation__item {
+    background: rgba(255, 255, 255, 0.3); }
+
+.navigation {
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  clear: both; }
+  .navigation:before, .navigation:after {
+    content: "";
+    display: table; }
+  .navigation:after {
+    clear: both; }
+  .navigation a {
+    color: #aaa;
+    text-decoration: none; }
+    .navigation a:visited {
+      color: #aaa; }
+    .navigation a:hover {
+      color: #aaa; }
+  .navigation__item--right {
+    float: right;
+    margin-right: 0px;
+    margin-left: -4px; }
+  .navigation__text {
+    padding: 10px 15px; }
+
+@media (max-width: 768px) {
+  .navigation__item {
+    display: block;
+    float: none; } }
+
+/*-------------------------------------------------
+SMACSS: MODULE - DROPDOWN
+-------------------------------------------------*/
+.dropdown {
+  display: block;
+  position: relative; }
+  .dropdown--full-width {
+    position: static; }
+  .dropdown .dropdown__caption {
+    padding: 10px; }
+    .dropdown .dropdown__caption:after {
+      content: "+";
+      padding-left: 1em; }
+  .dropdown .dropdown__content {
+    display: none;
+    width: 100%;
+    max-width: 200%;
+    position: absolute;
+    top: 3em;
+    background: #008000; }
+  .dropdown.is-open {
+    background: rgba(255, 255, 255, 0.1); }
+    .dropdown.is-open .dropdown__caption + .dropdown__content {
+      display: block; }
 
 /*-------------------------------------------------
 SMACSS: PAGE - LANDING

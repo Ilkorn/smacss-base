@@ -7,7 +7,7 @@ JS : INITIALIZATION
         // Set navigation behaviour
         $('.navigation').delegate('.navigation__item', 'click', function(event){
             var target = $(event.target),
-                navigationItem = target.parents('.navigation__item'),
+                navigationItem = target.closest('.navigation__item'),
                 navigationItems = navigationItem.siblings('.navigation__item');
 
             navigationItems.removeClass('is-active');
@@ -17,13 +17,15 @@ JS : INITIALIZATION
         // Set dropdown behaviour
         $('.dropdown').delegate('.dropdown__caption', 'click', function(event){
             var target = $(event.target),
-                dropdown = target.parents('.dropdown'),
+                dropdown = target.closest('.dropdown'),
                 isOpened = dropdown.hasClass('is-open');
 
-            $('.dropdown.is-open').removeClass('is-open');
             if (!isOpened){
                 dropdown.addClass('is-open');
+            } else {
+                dropdown.removeClass('is-open');
             }
+            event.stopPropagation();
         });
     });
 

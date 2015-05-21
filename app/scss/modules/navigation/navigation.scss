@@ -1,13 +1,16 @@
 /*-------------------------------------------------
 SMACSS: MODULE - NAVIGATION
 -------------------------------------------------*/
+$navigation-item-hover-color       : $color-alternative;
+$navigation-item-active-background : rgba(#fff, .05);
+
 %navigation__item-base {
   display: inline-block;
   cursor: pointer;
   margin-right: -4px;
 
   &.is-active {
-    background: rgba(#fff, .3);
+    background: $navigation-item-active-background;
   }
 }
 
@@ -20,15 +23,15 @@ SMACSS: MODULE - NAVIGATION
   @include clearfix();
   
   a {
-    color: $color-alternative;
+    color: $navigation-item-hover-color;
     text-decoration: none;
     
     &:visited {
-      color: $color-alternative;
+      color: $navigation-item-hover-color;
     }
     
     &:hover {
-      color: $color-alternative;
+      color: $navigation-item-hover-color;
     }
   }
 

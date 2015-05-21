@@ -1,9 +1,14 @@
 /**================================================
-JS : INITIALIZATION
-===================================================*/
+ JS : INITIALIZATION
+ ===================================================*/
 (function($){
 
     $().ready(function(){
+
+        $('body').click(function(){
+            $('.dropdown.is-open').removeClass('is-open');
+        });
+
         // Set navigation behaviour
         $('.navigation').delegate('.navigation__item', 'click', function(event){
             var target = $(event.target),

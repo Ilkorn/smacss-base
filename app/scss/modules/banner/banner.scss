@@ -1,0 +1,18 @@
+/*-------------------------------------------------
+SMACSS: MODULE - BANNER
+-------------------------------------------------*/
+$banner-default-text-width      : 70%;
+
+.banner{
+  position: relative;
+
+  &__text {
+    width: $banner-default-text-width;
+
+    font-family: $font-family-title;
+    &--center {
+      margin: 0 auto;
+    }
+
+  }
+}

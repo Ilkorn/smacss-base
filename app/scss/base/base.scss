@@ -7,7 +7,7 @@ SMACSS: BASE
 body {
     background: #22272a;
     color: $color-base;
-    font-family: $font-OpenSans;
+    font-family: $font-family-base;
 }
 
 a {
@@ -15,4 +15,8 @@ a {
 }
 a:hover {
     color: $color-alternative;
+}
+
+article{
+
 }

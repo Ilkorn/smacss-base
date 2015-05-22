@@ -478,32 +478,40 @@ SMACSS: MODULE - DROPDOWN
     position: static; }
   .dropdown--top > .dropdown__content {
     position: absolute;
-    bottom: 105%; }
+    bottom: 100%;
+    margin-bottom: 5px; }
   .dropdown--bottom > .dropdown__content {
     position: absolute;
-    top: 105%; }
+    top: 100%;
+    margin-top: 5px; }
   .dropdown--right > .dropdown__content {
     position: absolute;
-    left: 105%; }
+    left: 100%;
+    margin-left: 5px; }
   .dropdown--right-top > .dropdown__content {
     position: absolute;
-    left: 105%;
-    top: 0; }
+    top: 0;
+    left: 100%;
+    margin-left: 5px; }
   .dropdown--right-bottom > .dropdown__content {
     position: absolute;
-    left: 105%;
-    bottom: 0; }
+    bottom: 0;
+    left: 100%;
+    margin-left: 5px; }
   .dropdown--left > .dropdown__content {
     position: absolute;
-    right: 105%; }
+    right: 100%;
+    margin-right: 5px; }
   .dropdown--left-top > .dropdown__content {
     position: absolute;
-    right: 105%;
-    top: 0; }
+    top: 0;
+    right: 100%;
+    margin-right: 5px; }
   .dropdown--left-bottom > .dropdown__content {
     position: absolute;
-    right: 105%;
-    bottom: 0; }
+    bottom: 0;
+    right: 100%;
+    margin-right: 5px; }
   .dropdown > .dropdown__caption {
     padding: 10px; }
     .dropdown > .dropdown__caption:after {
@@ -517,6 +525,17 @@ SMACSS: MODULE - DROPDOWN
     background: rgba(255, 255, 255, 0.05); }
     .dropdown.is-open > .dropdown__caption + .dropdown__content {
       display: block; }
+
+/*-------------------------------------------------
+SMACSS: MODULE - BANNER
+-------------------------------------------------*/
+.banner {
+  position: relative; }
+  .banner__text {
+    width: 70%;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    .banner__text--center {
+      margin: 0 auto; }
 
 /*-------------------------------------------------
 SMACSS: PAGE - LANDING

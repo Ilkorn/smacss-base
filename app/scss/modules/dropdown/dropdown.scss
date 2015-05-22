@@ -1,7 +1,7 @@
 /*-------------------------------------------------
 SMACSS: MODULE - DROPDOWN
 -------------------------------------------------*/
-$dropdown-content-offset        : 105%;
+$dropdown-content-offset        : 5px;
 $dropdown-content-background    : #880088;
 $dropdown-opened-background     : rgba(#fff, .05);
 
@@ -16,36 +16,41 @@ $dropdown-opened-background     : rgba(#fff, .05);
   &--top {
     > .dropdown__content {
       position: absolute;
-      bottom: $dropdown-content-offset;
+      bottom: 100%;
+      margin-bottom: $dropdown-content-offset;
     }
   }
 
   &--bottom {
     > .dropdown__content {
       position: absolute;
-      top: $dropdown-content-offset;
+      top: 100%;
+      margin-top: $dropdown-content-offset;
     }
   }
 
   &--right {
     > .dropdown__content {
       position: absolute;
-      left: $dropdown-content-offset;
+      left: 100%;
+      margin-left: $dropdown-content-offset;
     }
 
     &-top{
       > .dropdown__content {
         position: absolute;
-        left: $dropdown-content-offset;
         top: 0;
+        left: 100%;
+        margin-left: $dropdown-content-offset;
       }
     }
 
     &-bottom{
       > .dropdown__content {
         position: absolute;
-        left: $dropdown-content-offset;
         bottom: 0;
+        left: 100%;
+        margin-left: $dropdown-content-offset;
       }
     }
   }
@@ -53,23 +58,26 @@ $dropdown-opened-background     : rgba(#fff, .05);
   &--left {
     > .dropdown__content {
       position: absolute;
-      right: $dropdown-content-offset;
+      right: 100%;
+      margin-right: $dropdown-content-offset;
     }
 
 
     &-top{
       > .dropdown__content {
         position: absolute;
-        right: $dropdown-content-offset;
         top: 0;
+        right: 100%;
+        margin-right: $dropdown-content-offset;
       }
     }
 
     &-bottom{
       > .dropdown__content {
         position: absolute;
-        right: $dropdown-content-offset;
         bottom: 0;
+        right: 100%;
+        margin-right: $dropdown-content-offset;
       }
     }
   }

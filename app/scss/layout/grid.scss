@@ -1,0 +1,36 @@
+/*-------------------------------------------------
+SMACSS: LAYOUT - GRID SYSTEM
+-------------------------------------------------*/
+@import "../vendor/susy/sass/susy";
+
+$grid-columns           :  12;
+$grid-gutter            : 1/4;
+$grid-math              : fluid;
+$grid-gutter-position   : inside;
+$grid-separator-color   : #aaa;
+
+%grid__item {
+  overflow: hidden;
+}
+
+$susy: (
+        columns: $grid-columns,
+        gutters: $grid-gutter,
+        math: $grid-math,
+        gutter-position: $grid-gutter-position
+);
+
+.l_grid {
+  @include container();
+}
+
+.grid {
+  &__twins {
+    @extend %grid__item;
+    @include span(6 of 12);
+  }
+  &__quarters {
+    @extend %grid__item;
+    @include span(3 of 12);
+  }
+}

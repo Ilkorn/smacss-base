@@ -9,6 +9,9 @@ $dropdown-opened-background     : rgba(#fff, .05);
   display: block;
   position: relative;
 
+  line-height: normal;
+  @include setNoneSelectable();
+
   &--full-width {
     position: static;
   }

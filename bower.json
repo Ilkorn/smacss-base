@@ -4,7 +4,8 @@
   "dependencies": {
     "jquery": "*",
     "compass-mixins": "~1.0.2",
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "susy": "~2.2.5"
   },
   "devDependencies": {},
   "overrides": {}

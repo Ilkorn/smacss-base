@@ -1,0 +1,36 @@
+/*-------------------------------------------------
+SMACSS: MODULE - PROMOTION
+-------------------------------------------------*/
+$promotion-padding                : 10px;
+$promotion-image-height-max       : 140px;
+$promotion-image-width-max       : 250px;
+
+
+.promo-billboard {
+  padding: $promotion-padding;
+  &__image {
+    height: 100%;
+    width: 100%;
+  }
+
+  &--vertical-fixed {
+    .promo-billboard__image{
+      display: block;
+      margin: 0 auto;
+
+      height: $promotion-image-height-max;
+      width: auto;
+    }
+  }
+
+  &--horizontal-fixed {
+    .promo-billboard__image{
+      display: block;
+      margin: 0 auto;
+
+      height: auto;
+      width: $promotion-image-width-max;
+    }
+  }
+
+}

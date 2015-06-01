@@ -101,3 +101,17 @@ $browser-context: 16; // Default
   font-size: $fontSize;
   color: $fontColor;
 }
+
+/*-------------------------------------------------
+ MIXIN :: SET ELEMENT NOT SELECTABLE
+-------------------------------------------------*/
+//Font styling font-family, font-size and color of the font
+@mixin setNoneSelectable() {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;
+}

@@ -33,7 +33,10 @@ SMACSS: LAYOUT - CONTENT
 .l_content {
   display: table-row;
   height: 100%;
-  padding: 40px 20px;
+
+  .l_content__wrapper {
+    padding: 40px 20px;
+  }
 }
 
 /*-------------------------------------------------

@@ -7,7 +7,8 @@ $navigation-item-active-background : rgba(#fff, .05);
 %navigation__item-base {
   display: inline-block;
   cursor: pointer;
-  margin-right: -4px;
+  font-size: $font-size-regular;
+  line-height: 0;
 
   &.is-active {
     background: $navigation-item-active-background;
@@ -19,8 +20,15 @@ $navigation-item-active-background : rgba(#fff, .05);
   padding: 0;
   margin: 0;
 
+  font-size: 0;
   list-style: none;
   @include clearfix();
+
+  &.navigation--middle {
+    .navigation__item {
+      vertical-align: middle;
+    }
+  }
   
   a {
     color: $navigation-item-hover-color;
@@ -47,6 +55,8 @@ $navigation-item-active-background : rgba(#fff, .05);
 
   &__text{
     padding: 10px 15px;
+
+    line-height: normal;
   }
 }
 

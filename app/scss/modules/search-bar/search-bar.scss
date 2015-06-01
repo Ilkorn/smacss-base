@@ -1,0 +1,64 @@
+/*-------------------------------------------------
+SMACSS: MODULE - SEARCH BAR
+-------------------------------------------------*/
+@import "../../vendor/compass-mixins/lib/compass/css3/border-radius";
+$search-bar-border-radius: 5px;
+$search-bar-border-width: 2px;
+$search-bar-border-color: yellow;
+
+$search-bar-base-height: 35px;
+
+.search-bar {
+  display: inline-block;
+  @include span(12 of 12);
+  height: $search-bar-base-height;
+  position: relative;
+
+
+  & > .search-bar__fill-control {
+    position: relative;
+    display: block;
+    height: 35px;
+
+    overflow-x: hidden;
+    line-height: normal;
+    border-top: $search-bar-border-width solid $search-bar-border-color;
+    border-bottom: $search-bar-border-width solid $search-bar-border-color;
+
+    & > .search-bar__input {
+      height: 100%;
+      width: 100%;
+
+      border: none;
+      background: transparent;
+      outline: none;
+      padding: 0 5px;
+    }
+  }
+
+  & > .search-bar__left-control {
+    position: relative;
+    float: left;
+    display: block;
+    height: $search-bar-base-height;
+
+    padding: 5px;
+    line-height: normal;
+    border: $search-bar-border-width solid $search-bar-border-color;
+    border-right: none;
+    @include border-left-radius($search-bar-border-radius);
+  }
+
+  & > .search-bar__right-control {
+    position: relative;
+    float: right;
+    display: block;
+    height: $search-bar-base-height;
+
+    padding: 5px;
+    line-height: normal;
+    border: $search-bar-border-width solid $search-bar-border-color;
+    border-left: none;
+    @include border-right-radius($search-bar-border-radius);
+  }
+}

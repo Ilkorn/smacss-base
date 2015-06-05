@@ -1,0 +1,23 @@
+/*-------------------------------------------------
+SMACSS: MODULE - DROPDOWN
+-------------------------------------------------*/
+$form-input-border-color        : #000;
+$form-input-border              : 1px solid $form-input-border-color;
+$form-input-corner-radius       : 5px;
+$form-input-base-height         : 22px;
+$form-input-small-height        : $form-input-base-height * 0.75;
+$form-input-large-height        : $form-input-base-height * 1.25;
+
+.form {
+  position: relative;
+
+  .form__element {
+    height: $form-input-base-height;
+
+    border: $form-input-border;
+    color: #000;
+    padding-left: 5px;
+    padding-right: 5px;
+    @include border-radius($form-input-corner-radius);
+  }
+}

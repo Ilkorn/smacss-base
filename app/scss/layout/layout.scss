@@ -5,6 +5,8 @@ html,
 body,
 .l_page_wrapper {
   height: 100%;
+  width: 100%;
+  max-width: $page-max-width;
 }
 
 .l_page_wrapper {

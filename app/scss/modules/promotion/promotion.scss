@@ -1,7 +1,7 @@
 /*-------------------------------------------------
 SMACSS: MODULE - PROMOTION
 -------------------------------------------------*/
-$promotion-padding                : 10px;
+$promotion-padding                : 0px;
 $promotion-image-height-max       : 140px;
 $promotion-image-width-max       : 250px;
 
@@ -10,7 +10,9 @@ $promotion-image-width-max       : 250px;
   padding: $promotion-padding;
   &__image {
     height: 100%;
+    max-height: 100%;
     width: 100%;
+    max-width: 100%;
   }
 
   &--vertical-fixed {

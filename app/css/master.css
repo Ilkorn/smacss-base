@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Fugaz+One);
 /* -----------------------------------------------------------------------
 Version: 0.1
 
@@ -384,8 +385,19 @@ SMACSS: BASE
   box-sizing: border-box; }
 
 body {
-  background: #22272a;
+  background: #22272a; }
+
+/*-------------------------------------------------
+SMACSS: TYPOGRAPHY
+-------------------------------------------------*/
+body {
   color: #fff;
+  font-family: 'Open Sans', 'Arial', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fugaz One', Helvetica, Arial, sans-serif; }
+
+a, p, span, sub, sup, article, div, mark, del, ins, strong, b, small, em, i {
   font-family: 'Open Sans', 'Arial', sans-serif; }
 
 a {
@@ -394,6 +406,9 @@ a {
 a:hover {
   color: #aaa; }
 
+pre {
+  white-space: pre-wrap; }
+
 /*-------------------------------------------------
 SMACSS: LAYOUT
 -------------------------------------------------*/
@@ -401,7 +416,9 @@ SMACSS: LAYOUT
 SMACSS: LAYOUT - COMMON
 -------------------------------------------------*/
 html, body, .l_page_wrapper {
-  height: 100%; }
+  height: 100%;
+  width: 100%;
+  max-width: 992px; }
 
 .l_page_wrapper {
   display: table;
@@ -587,7 +604,7 @@ SMACSS: MODULE - BANNER
   position: relative; }
   .banner__text {
     width: 70%;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Fugaz One', Helvetica, Arial, sans-serif; }
     .banner__text--center {
       margin: 0 auto; }
 
@@ -667,10 +684,12 @@ SMACSS: MODULE - SEARCH BAR
 SMACSS: MODULE - PROMOTION
 -------------------------------------------------*/
 .promo-billboard {
-  padding: 10px; }
+  padding: 0px; }
   .promo-billboard__image {
     height: 100%;
-    width: 100%; }
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%; }
   .promo-billboard--vertical-fixed .promo-billboard__image {
     display: block;
     margin: 0 auto;

@@ -2,21 +2,24 @@
 SMACSS: VARIABLES
 -------------------------------------------------*/
 /* Colors */
-$color-base: #fff;
-$color-alternative: #aaa;
-$color-error: #aa1122;
-$color-error-success: #11dd55;
+$color-base				: #fff;
+$color-alternative		: #aaa;
+$color-error			: #aa1122;
+$color-error-success	: #11dd55;
 
 /* Font */
-$font-size-regular: 16px;
-$font-family-base: 'Open Sans', 'Arial', sans-serif;
-$font-family-title: 'Fugaz One', Helvetica, Arial, sans-serif;;
-$font-family-alternative: 'Open Sans', 'Arial', sans-serif;
+$font-size-regular			: 16px;
+$font-family-base			: 'Open Sans', 'Arial', sans-serif;
+$font-family-title			: 'Fugaz One', Helvetica, Arial, sans-serif;;
+$font-family-alternative	: 'Open Sans', 'Arial', sans-serif;
 
 
 /* Page size */
-$page-large: 1200px;
-$page-medium: 992px;
-$page-small: 768px;
-$page-extra-small: 480px;
-$page-max-width: $page-medium;
+$page-large			: 1200px;
+$page-medium		: 992px;
+$page-small			: 768px;
+$page-extra-small	: 480px;
+$page-max-width		: $page-medium;
+
+/* Z-Index settings */
+$modules-z-index	:	5;

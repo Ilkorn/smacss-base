@@ -3,6 +3,7 @@ SMACSS: MODULE - DROPDOWN
 -------------------------------------------------*/
 $dropdown-content-offset        : 5px;
 $dropdown-content-background    : #880088;
+$dropdown-content-min-width     : 150px;
 $dropdown-opened-background     : rgba(#fff, .05);
 
 .dropdown {
@@ -95,8 +96,10 @@ $dropdown-opened-background     : rgba(#fff, .05);
   }
 
   > .dropdown__content {
+    z-index: $modules-z-index;
+
     display: none;
-    min-width: 100%;
+    min-width: $dropdown-content-min-width;
 
     background: $dropdown-content-background;
   }

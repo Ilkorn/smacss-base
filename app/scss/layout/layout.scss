@@ -1,12 +1,11 @@
 /*-------------------------------------------------
 SMACSS: LAYOUT - COMMON
 -------------------------------------------------*/
+$content-padding:     0;
 html,
 body,
 .l_page_wrapper {
   height: 100%;
-  width: 100%;
-  max-width: $page-max-width;
 }
 
 .l_page_wrapper {
@@ -37,7 +36,7 @@ SMACSS: LAYOUT - CONTENT
   height: 100%;
 
   .l_content__wrapper {
-    padding: 40px 20px;
+    padding: $content-padding;
   }
 }
 

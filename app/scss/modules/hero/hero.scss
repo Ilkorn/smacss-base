@@ -1,3 +1,48 @@
 /*-------------------------------------------------
 SMACSS: MODULE - HERO
 -------------------------------------------------*/
+$hero-image-min-height	:     350px;
+$hero-image-position	:     center top;
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: $hero-image-min-height;
+
+  &.hero--full-top {
+	position: static;
+
+  	.hero__image {
+  	  position: absolute;
+      top:0;
+      left: 0;
+      z-index: -1;	
+  	}
+    
+    .hero__text {
+    	position: relative;
+    	padding-top: 120px;
+    	padding-left: 0;
+    	top: auto;
+    	left: auto;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    min-height: $hero-image-min-height;
+  
+    background-size: cover;
+    background-position: $hero-image-position;		
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+
+    height: 100%;
+    width: 100%;
+  }
+}
+  

@@ -1,0 +1,70 @@
+/*-------------------------------------------------
+SMACSS: TYPOGRAPHY
+-------------------------------------------------*/
+
+// This import may be optimized for better performance
+@import url(http://fonts.googleapis.com/css?family=Fugaz+One);
+
+body {
+  color: $color-base;
+  font-family: $font-family-base;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-family-title;
+}
+
+a,
+p,
+span,
+sub,
+sup,
+article,
+div,
+mark,
+del,
+ins,
+strong,
+b,
+small,
+em,
+i{
+  font-family: $font-family-base;
+}
+
+a {
+  color: $color-alternative;
+}
+a:hover {
+  color: $color-alternative;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+article{
+
+}
+
+.text-left {
+  text-align: left; 
+}
+
+
+.text-center {
+  text-align: center; 
+}
+
+
+.text-right {
+  text-align: right; 
+}
+
+
+.text-justify {
+  text-align: justify; 
+}
+
+
+

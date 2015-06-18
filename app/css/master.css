@@ -344,6 +344,7 @@ SMACSS: VARIABLES
 /* Colors */
 /* Font */
 /* Page size */
+/* Z-Index settings */
 /*
 TODO ::
 [] Integrate Bourbon to make use of most mixins - http://bourbon.io/docs/
@@ -409,6 +410,18 @@ a:hover {
 pre {
   white-space: pre-wrap; }
 
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-justify {
+  text-align: justify; }
+
 /*-------------------------------------------------
 SMACSS: LAYOUT
 -------------------------------------------------*/
@@ -416,9 +429,7 @@ SMACSS: LAYOUT
 SMACSS: LAYOUT - COMMON
 -------------------------------------------------*/
 html, body, .l_page_wrapper {
-  height: 100%;
-  width: 100%;
-  max-width: 992px; }
+  height: 100%; }
 
 .l_page_wrapper {
   display: table;
@@ -440,7 +451,7 @@ SMACSS: LAYOUT - CONTENT
   display: table-row;
   height: 100%; }
   .l_content .l_content__wrapper {
-    padding: 40px 20px; }
+    padding: 0; }
 
 /*-------------------------------------------------
 SMACSS: LAYOUT - FOOTER
@@ -589,8 +600,9 @@ SMACSS: MODULE - DROPDOWN
       content: "+";
       padding-left: 1em; }
   .dropdown > .dropdown__content {
+    z-index: 5;
     display: none;
-    min-width: 100%;
+    min-width: 150px;
     background: #880088; }
   .dropdown.is-open {
     background: rgba(255, 255, 255, 0.05); }
@@ -717,6 +729,38 @@ SMACSS: MODULE - DROPDOWN
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px; }
+
+/*-------------------------------------------------
+SMACSS: MODULE - HERO
+-------------------------------------------------*/
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 350px; }
+  .hero.hero--full-top {
+    position: static; }
+    .hero.hero--full-top .hero__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+    .hero.hero--full-top .hero__text {
+      position: relative;
+      padding-top: 120px;
+      padding-left: 0;
+      top: auto;
+      left: auto; }
+  .hero__image {
+    width: 100%;
+    min-height: 350px;
+    background-size: cover;
+    background-position: center top; }
+  .hero__text {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    height: 100%;
+    width: 100%; }
 
 /*-------------------------------------------------
 SMACSS: PAGE - LANDING

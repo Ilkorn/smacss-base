@@ -3,14 +3,18 @@ SMACSS: LAYOUT - GRID SYSTEM
 -------------------------------------------------*/
 @import "../vendor/susy/sass/susy";
 
-$grid-columns           :  12;
-$grid-gutter            : 1/4;
-$grid-math              : fluid;
-$grid-gutter-position   : inside;
-$grid-separator-color   : #aaa;
+$grid-columns             :  12;
+$grid-gutter              : 1/4;
+$grid-math                : fluid;
+$grid-gutter-position     : inside;
+$grid-separator-color     : #aaa;
+$grid-item-padding-top    : 5px;
+$grid-item-padding-bottom : 5px;
 
 %grid__item {
   overflow: hidden;
+  padding-top: $grid-item-padding-top;
+  padding-bottom: $grid-item-padding-bottom;
 }
 
 $susy: (
@@ -32,5 +36,9 @@ $susy: (
   &__quarters {
     @extend %grid__item;
     @include span(3 of 12);
+  }
+  &__triple {
+    @extend %grid__item;
+    @include span(4 of 12);
   }
 }

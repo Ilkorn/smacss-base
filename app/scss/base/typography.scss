@@ -47,24 +47,41 @@ article{
 
 }
 
-.text-left {
+.text--left {
   text-align: left; 
 }
+.text--slim-left {
+  margin: 0;
 
+  text-align: left;
+}
 
-.text-center {
+.text--center {
   text-align: center; 
 }
 
+.text--slim-center {
+  margin: 0;
 
-.text-right {
+  text-align: center;
+}
+
+.text--right {
   text-align: right; 
 }
 
+.text--slim-right {
+  margin: 0;
 
-.text-justify {
+  text-align: right;
+}
+
+.text--justify {
   text-align: justify; 
 }
 
+.text--slim-justify {
+  margin: 0;
 
-
+  text-align: justify;
+}

@@ -1,0 +1,18 @@
+/*-------------------------------------------------
+SMACSS: MODULE - PANEL
+-------------------------------------------------*/
+$panel-border       : 1px solid $color-base;
+$panel-padding      : 10px;
+$panel-min-height   : 150px;
+
+.panel {
+  padding: $panel-padding;
+
+  min-height: $panel-min-height;
+
+  border: $panel-border;
+
+  &__content {
+
+  }
+}

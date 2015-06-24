@@ -7,6 +7,7 @@ $form-input-corner-radius       : 5px;
 $form-input-base-height         : 22px;
 $form-input-small-height        : $form-input-base-height * 0.75;
 $form-input-large-height        : $form-input-base-height * 1.25;
+//$form-button
 
 .form {
   position: relative;
@@ -19,5 +20,15 @@ $form-input-large-height        : $form-input-base-height * 1.25;
     padding-left: 5px;
     padding-right: 5px;
     @include border-radius($form-input-corner-radius);
+
+    &.form__element--large {
+      height: $form-input-large-height;
+    }
+  }
+
+  .form__button {
+
+    @include border-radius($form-input-corner-radius);
+    color: $color-base-inverted;
   }
 }

@@ -2,9 +2,9 @@
 SMACSS: MODULE - DROPDOWN
 -------------------------------------------------*/
 $dropdown-content-offset        : 5px;
-$dropdown-content-background    : #880088;
+$dropdown-content-background    : rgba(#000, .1);
 $dropdown-content-min-width     : 150px;
-$dropdown-opened-background     : rgba(#fff, .05);
+$dropdown-opened-background     : rgba(#000, .2);
 
 .dropdown {
   display: block;

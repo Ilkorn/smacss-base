@@ -386,13 +386,13 @@ SMACSS: BASE
   box-sizing: border-box; }
 
 body {
-  background: #22272a; }
+  background: #fff; }
 
 /*-------------------------------------------------
 SMACSS: TYPOGRAPHY
 -------------------------------------------------*/
 body {
-  color: #fff;
+  color: #000;
   font-family: 'Open Sans', 'Arial', sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -493,6 +493,14 @@ SMACSS: LAYOUT - GRID SYSTEM
     display: block;
     clear: both; }
 
+.l_grid__row {
+  clear: both;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left; }
+
 .grid__twins {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -530,7 +538,7 @@ SMACSS: MODULE - NAVIGATION
   font-size: 16px;
   line-height: 0; }
   .is-active.navigation__item {
-    background: rgba(255, 255, 255, 0.05); }
+    background: rgba(0, 0, 0, 0.05); }
 
 .navigation {
   display: block;
@@ -629,9 +637,9 @@ SMACSS: MODULE - DROPDOWN
     z-index: 5;
     display: none;
     min-width: 150px;
-    background: #880088; }
+    background: rgba(0, 0, 0, 0.1); }
   .dropdown.is-open {
-    background: rgba(255, 255, 255, 0.05); }
+    background: rgba(0, 0, 0, 0.2); }
     .dropdown.is-open > .dropdown__caption + .dropdown__content {
       display: block; }
 
@@ -763,7 +771,7 @@ SMACSS: MODULE - DROPDOWN
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
-    color: #000; }
+    color: #fff; }
 
 /*-------------------------------------------------
 SMACSS: MODULE - HERO
@@ -803,7 +811,7 @@ SMACSS: MODULE - PANEL
 .panel {
   padding: 10px;
   min-height: 150px;
-  border: 1px solid #fff; }
+  border: 1px solid #000; }
 
 /*-------------------------------------------------
 SMACSS: PAGE - LANDING

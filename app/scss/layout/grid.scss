@@ -28,6 +28,10 @@ $susy: (
   @include container();
 }
 
+.l_grid__row {
+  @include span(full no-gutters break)
+}
+
 .grid {
   &__twins {
     @extend %grid__item;

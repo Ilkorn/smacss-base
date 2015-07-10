@@ -380,6 +380,9 @@ TODO ::
  MIXIN :: SET ELEMENT NOT SELECTABLE
 -------------------------------------------------*/
 /*-------------------------------------------------
+ MIXIN :: GRID
+-------------------------------------------------*/
+/*-------------------------------------------------
 SMACSS: BASE
 -------------------------------------------------*/
 *, *:before, *:after {
@@ -402,7 +405,7 @@ a, p, span, sub, sup, article, div, mark, del, ins, strong, b, small, em, i {
   font-family: 'Open Sans', 'Arial', sans-serif; }
 
 a {
-  color: #aaa; }
+  color: #000; }
 
 a:hover {
   color: #aaa; }
@@ -468,6 +471,29 @@ SMACSS: LAYOUT - CONTENT
   height: 100%; }
   .l_content .l_content__wrapper {
     padding: 0; }
+
+/*-------------------------------------------------
+SMACSS: LAYOUT - CONTENT
+-------------------------------------------------*/
+.l_sidebar {
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
+
+.l_content-with-sidebar {
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 75%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%; }
 
 /*-------------------------------------------------
 SMACSS: LAYOUT - FOOTER
@@ -771,7 +797,7 @@ SMACSS: MODULE - DROPDOWN
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
-    color: #fff; }
+    color: #000; }
 
 /*-------------------------------------------------
 SMACSS: MODULE - HERO

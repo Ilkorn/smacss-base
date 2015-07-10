@@ -29,6 +29,6 @@ $form-input-large-height        : $form-input-base-height * 1.25;
   .form__button {
 
     @include border-radius($form-input-corner-radius);
-    color: $color-base-inverted;
+    color: $color-base;
   }
 }

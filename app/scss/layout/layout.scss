@@ -41,6 +41,18 @@ SMACSS: LAYOUT - CONTENT
 }
 
 /*-------------------------------------------------
+SMACSS: LAYOUT - CONTENT
+-------------------------------------------------*/
+.l_sidebar {
+  overflow: hidden;
+  @include grid-cell(3 of 12);
+}
+.l_content-with-sidebar {
+  overflow: hidden;
+  @include grid-cell(9 of 12);
+}
+
+/*-------------------------------------------------
 SMACSS: LAYOUT - FOOTER
 -------------------------------------------------*/
 .l_footer {

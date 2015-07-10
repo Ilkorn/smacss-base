@@ -1,12 +1,7 @@
 /*-------------------------------------------------
 SMACSS: LAYOUT - GRID SYSTEM
 -------------------------------------------------*/
-@import "../vendor/susy/sass/susy";
 
-$grid-columns             :  12;
-$grid-gutter              : 1/4;
-$grid-math                : fluid;
-$grid-gutter-position     : inside;
 $grid-separator-color     : #aaa;
 $grid-item-padding-top    : 5px;
 $grid-item-padding-bottom : 5px;
@@ -17,32 +12,25 @@ $grid-item-padding-bottom : 5px;
   padding-bottom: $grid-item-padding-bottom;
 }
 
-$susy: (
-        columns: $grid-columns,
-        gutters: $grid-gutter,
-        math: $grid-math,
-        gutter-position: $grid-gutter-position
-);
-
 .l_grid {
-  @include container();
+  @include grid-container();
 }
 
 .l_grid__row {
-  @include span(full no-gutters break)
+  @include grid-row();
 }
 
 .grid {
   &__twins {
     @extend %grid__item;
-    @include span(6 of 12);
+    @include grid-cell(6 of 12);
   }
   &__quarters {
     @extend %grid__item;
-    @include span(3 of 12);
+    @include grid-cell(3 of 12);
   }
   &__triple {
     @extend %grid__item;
-    @include span(4 of 12);
+    @include grid-cell(4 of 12);
   }
 }

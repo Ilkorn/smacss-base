@@ -115,3 +115,34 @@ $browser-context: 16; // Default
   -o-user-select: none;
   user-select: none;
 }
+
+
+/*-------------------------------------------------
+ MIXIN :: GRID
+-------------------------------------------------*/
+//Preset for SUSY library
+@import "../vendor/susy/sass/susy";
+
+$grid-columns             :  12;
+$grid-gutter              : 1/4;
+$grid-math                : fluid;
+$grid-gutter-position     : inside;
+
+$susy: (
+        columns: $grid-columns,
+        gutters: $grid-gutter,
+        math: $grid-math,
+        gutter-position: $grid-gutter-position
+);
+
+@mixin grid-row() {
+  @include span(full no-gutters break)
+}
+
+@mixin grid-cell($cell-size) {
+  @include span($cell-size)
+}
+
+@mixin grid-container() {
+  @include container();
+}

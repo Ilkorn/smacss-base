@@ -7,3 +7,10 @@ SMACSS: BASE
 body {
     background: $color-base-inverted;
 }
+
+a,
+input,
+select,
+textarea {
+  outline: none;
+}

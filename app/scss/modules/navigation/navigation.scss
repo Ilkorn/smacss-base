@@ -1,8 +1,8 @@
 /*-------------------------------------------------
 SMACSS: MODULE - NAVIGATION
 -------------------------------------------------*/
-$navigation-item-hover-color       : $color-alternative;
-$navigation-item-active-background : rgba(#000, .05);
+$navigation-item-hover-color       : $color-base;
+$navigation-item-active-background : rgba($color-alternative, .2);
 
 %navigation__item-base {
   display: inline-block;

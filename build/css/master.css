@@ -391,6 +391,9 @@ SMACSS: BASE
 body {
   background: #fff; }
 
+a, input, select, textarea {
+  outline: none; }
+
 /*-------------------------------------------------
 SMACSS: TYPOGRAPHY
 -------------------------------------------------*/
@@ -564,7 +567,7 @@ SMACSS: MODULE - NAVIGATION
   font-size: 16px;
   line-height: 0; }
   .is-active.navigation__item {
-    background: rgba(0, 0, 0, 0.05); }
+    background: rgba(170, 170, 170, 0.2); }
 
 .navigation {
   display: block;
@@ -581,12 +584,12 @@ SMACSS: MODULE - NAVIGATION
   .navigation.navigation--middle .navigation__item {
     vertical-align: middle; }
   .navigation a {
-    color: #aaa;
+    color: #000;
     text-decoration: none; }
     .navigation a:visited {
-      color: #aaa; }
+      color: #000; }
     .navigation a:hover {
-      color: #aaa; }
+      color: #000; }
   .navigation__item--right {
     float: right;
     margin-right: 0px;
